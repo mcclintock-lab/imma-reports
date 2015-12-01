@@ -16,7 +16,6 @@ class SpinnerOverviewTab extends ReportTab
       sketchClass: @sketchClass.forTemplate()
       attributes: @model.getAttributes()
       admin: @project.isAdmin window.user
-      chartData: _.map data, (d, i) -> {index: i, value: d}
     
     @$el.html @template.render(context, templates)
 
