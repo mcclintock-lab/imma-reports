@@ -7,7 +7,60 @@
 {{/sketchClass.deleted}}
 
 <div class="reportSection tableContainer">
-  <h4>Spinners</h4>
+  <h4>Spinner Diversity</h4>
+      <table data-paging="10">
+        <thead>
+          <tr>
+            <th>Island</th>
+            <th>Allelic Richness</th>
+            <th>Haplotype Diversity</th>
+            <th>Nucleotide Diversity</th>
+            <th>Num Alleles</th>
+            <th>Num Haplotypes</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#spinner_diversity}}
+          <tr>
+            <td>{{NAME}}</td>
+            <td>{{Allelic_ri}}</td>
+            <td>{{Haplotype}}</td>
+            <td>{{Nucleotide}}</td>
+            <td>{{Number_o_2}}</td>
+            <td>{{Number_o_1}}</td>
+          </tr>
+          {{/spinner_diversity}}
+        </tbody>
+      </table>
 
+</div>
 
+<div class="reportSection tableContainer">
+  <h4>Spinner Rarified</h4>
+      <table data-paging="10">
+        <thead>
+          <tr>
+            <th>Island</th>
+            <th>10</th>
+            <th>Private 10</th>
+            <th>60</th>
+            <th>Private 60</th>
+            <th>mtDNA</th>
+            <th>Private mtDNA</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#spinner_rarified}}
+          <tr>
+            <td>{{NAME}}</td>
+            <td>{{Rarified_a}}</td>
+            <td>{{Rarified_p}}</td>
+            <td>{{Rarified_1}}</td>
+            <td>{{Rarified_2}}</td>
+            <td>{{Rarified_3}}</td>
+            <td>{{Rarified_4}}</td>
+          </tr>
+          {{/spinner_rarified}}
+        </tbody>
+      </table>
 </div>

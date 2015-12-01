@@ -7,7 +7,45 @@
 {{/sketchClass.deleted}}
 
 <div class="reportSection tableContainer">
-  <h4>Humpbacks</h4>
+  <h4>Humpback Diversity</h4>
 
+      <table data-paging="10">
+        <thead>
+          <tr>
+            <th>Country or Region</th>
+            <th>Haplotypic</th>
+            <th>Num Haplotypes</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#humpback_diversity}}
+          <tr>
+            <td>{{Country}}</td>
+            <td>{{Haplotyic}}</td>
+            <td>{{Number_of}}</td>
+          </tr>
+          {{/humpback_diversity}}
+        </tbody>
+      </table>
+</div>
 
+<div class="reportSection tableContainer">
+  <h4>Average Number of Humpback Alleles</h4>
+
+      <table data-paging="10">
+        <thead>
+          <tr>
+            <th>Country or Region</th>
+            <th>Average Number of Alleles</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#humpback_diversity}}
+          <tr>
+            <td>{{Country}}</td>
+            <td>{{Average_nu}}</td>
+          </tr>
+          {{/humpback_diversity}}
+        </tbody>
+      </table>
 </div>
