@@ -55,9 +55,12 @@ module.exports = (grunt) ->
         files:
           'dist/main.css': 'node_modules/seasketch-reporting-api/stylesheets/common.less'
     browserify:
-      report:
-        src: 'scripts/report.coffee'
-        dest: 'dist/report.js'
+      spinner_report:
+        src: 'scripts/spinner_report.coffee'
+        dest: 'dist/spinner_report.js'
+      humpback_report:
+        src: 'scripts/humpback_report.coffee'
+        dest: 'dist/humpback_report.js'
       generic:
         src: 'scripts/generic.coffee'
         dest: 'dist/generic.js'
