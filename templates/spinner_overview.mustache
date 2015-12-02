@@ -7,42 +7,40 @@
 {{/sketchClass.deleted}}
 
 <div class="reportSection tableContainer">
-  <h4>Spinner Diversity</h4>
+  <h4>Spinner Genetic Diversity (mtDNA and 10 msats)</h4>
       <table data-paging="10">
         <thead>
           <tr>
             <th>Location</th>
-            <th>Allelic Richness</th>
+            <th>Number of Haplotypes</th>
             <th>Haplotype Diversity</th>
             <th>Nucleotide Diversity</th>
             <th>Number of Alleles</th>
-            <th>Number of Haplotypes</th>
+            <th>Allelic Richness</th>
           </tr>
         </thead>
         <tbody>
           {{#spinner_diversity}}
           <tr>
             <td>{{NAME}}</td>
-            <td>{{Allelic_ri}}</td>
+            <td>{{Number_o_1}}</td>
             <td>{{Haplotype}}</td>
             <td>{{Nucleotide}}</td>
             <td>{{Number_o_2}}</td>
-            <td>{{Number_o_1}}</td>
+            <td>{{Allelic_ri}}</td>
           </tr>
           {{/spinner_diversity}}
         </tbody>
       </table>
-
 </div>
-
 <div class="reportSection tableContainer">
-  <h4>Spinner Rarified</h4>
+  <h4>Spinner Rarified Genetic Diversity (mtDNA and msats)</h4>
       <table data-paging="10">
         <thead>
           <tr>
             <th></th>
-            <th colspan="2">usats (10 genes)</th>
-            <th colspan="2">usats (60 genes)</th>
+            <th colspan="2">msats (10 genes)</th>
+            <th colspan="2">msats (60 genes)</th>
             <th colspan="2">mtDNA</th>
           </tr>
           <tr>
